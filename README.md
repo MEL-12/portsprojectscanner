@@ -2,13 +2,11 @@
 
 A command-line network port scanner built with Python and nmap that detects open ports and displays service and version information on any target host.
 
----
 
 ## Project Description
 
 This project is a lightweight CLI-based network port scanner that uses Python and the nmap library to scan a target host for open ports. It displays a color-coded table showing each port's state (open, filtered, or closed), the service running on it, and the version information. It supports TCP and UDP scanning, custom port ranges, adjustable timeouts, and optional output saving to a text file.
 
----
 
 ## Steps Taken to Complete the Project
 
@@ -57,7 +55,6 @@ This project is a lightweight CLI-based network port scanner that uses Python an
   git push -u origin main
 ```
 
----
 
 ## Requirements
 
@@ -67,7 +64,6 @@ This project is a lightweight CLI-based network port scanner that uses Python an
   - **Linux:** `sudo apt install nmap`
   - **Windows:** Download from [nmap.org](https://nmap.org/download.html)
 
----
 
 ## Setup
 
@@ -85,7 +81,6 @@ venv\Scripts\activate         # Windows
 pip install -r requirements.txt
 ```
 
----
 
 ## Usage
 
@@ -100,7 +95,6 @@ python scanner.py <target> [options]
 | `--udp` | Enable UDP scan (requires sudo/admin) | off |
 | `-o`, `--output` | Save results to a text file | — |
 
----
 
 ## Examples
 
@@ -117,8 +111,6 @@ python scanner.py 10.0.0.1 -p 80,443,8080 -o results.txt
 # UDP scan (Linux/macOS — run with sudo)
 sudo python scanner.py 192.168.1.1 --udp
 ```
-
----
 
 ## Legal Notice
 
